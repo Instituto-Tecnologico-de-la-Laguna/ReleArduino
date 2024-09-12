@@ -20,11 +20,13 @@ namespace ReleArduino
                 {
                     puerto.WriteLine("e");
                     btnRelevador.BackColor = Color.Lime;
+                    bandera= true;
                 }
                 else
                 {
                     puerto.WriteLine("a");
                     btnRelevador.BackColor = Color.IndianRed;
+                    bandera= false;
                 }
                 puerto.Close();                
             }
